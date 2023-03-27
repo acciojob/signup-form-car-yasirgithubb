@@ -8,50 +8,47 @@
 
 <body>
 	<form method="post">
-	<form method="post">
 		<div>
 		<label for="name">Name*</label>
-		<input type="text" id="#name" placeholder="Name">
+		<input type="text" id="name" placeholder="name" required>
 			</div>
 		<div>
-		<label for="email">Email*</label>
-		<input type="email" id="#email" placeholder="Email">
+		<label for="email">Email</label>
+		<input type="email" id="#email" placeholder="email" required>
 			</div>
 		<label for="gender">Gender*</label>
-		<label for="#gender_m">male</label>
-		<input type="radio" id="#gender_m" name="yasir">
-			<label for="gender_f">female</label>
-		<input type="radio" id="gender_f" name="yasir">
+		<label for="#gender_m">M</label>
+		<input type="radio" id="#gender_m" name="yasir" required>
+			<label for="gender_f">F</label>
+		<input type="radio" id="gender_f" name="yasir" required>
 		<div>
-<label for="#cars">Car Brands*</label>
-<select id="#cars">
+<label for="#cars">Choose your car*</label>
+<select name="cars id="#cars" required>
+	<option value="">--Please choose an option--</option>
 <option>BMW</option>
 <option>Audi</option>
 <option>Mercedez</option>
 </select>
 </div>
-		<label for="#age">Age*</label>
-		<input type="number" id="#age" placeholder="Age">
+		<label for="age">Age</label>
+		<input type="number" id="age" placeholder="age" required>
 		<div>
-			<label for="#dob">DOB*</label>
-			<input type="date" id="#dob" >
+			<label for="dob">DOB</label>
+			<input type="date" id="#dob" required>
 		</div>
 		<div>
-			<label for="#tel">Phone Number</label>
-			<input type="number" id="#tel" placeholder="xxx-xxx-xxxx">
+			<label for="tel">Phone Number</label>
+			<input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
 		</div>
 		<div>
 			<label for="#password">Password*</label>
-			<input type="password" id="#password*" placeholder="password">
+			<input type="password" id="password" placeholder="password" required>
 		</div>
 		<div>
-			<label for="#tos"> I agree to the TOS.</label>
-			<input type="checkbox" id="#tos" >
+			<label for="tos"> I agree to the TOS.</label>
+			<input type="checkbox" id="#tos" required>
 		</div>
-		<div>
-			<label for="submit"> </label>
-			<input type="submit" id="submit" >
-		</div>
+		<button type="submit">Submit</button>
 	</form>
 
 </body>
